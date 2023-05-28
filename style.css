@@ -1,0 +1,142 @@
+:root {
+    --blue: rgb(5, 56, 107);
+    --muddy-green: rgb(55, 150, 131);
+    --med-green: rgb(92, 219, 149);
+    --pale-green: rgb(142, 228, 143);
+    --off-white: rgb(237, 245, 225);
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+    background-color: var(--med-green);
+    /* padding-left: 0%;
+    padding-right: 0%; */
+    margin: 0%;
+    padding: 0%;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--blue);
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+#resume-link {
+    color: black;
+    
+}
+
+p {
+    color: rgb(22, 44, 74);
+}
+
+#top-link {
+    color:cyan;
+    font-size: 8px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.link-align-center {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-text-wrap {
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#header {
+    border: 1px solid;
+    height: 60px;
+    width: auto;
+    background-color: var(--off-white);
+    color: var(--blue);
+
+    position: sticky;
+    top: 0px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#footer {
+    height: 130px;
+    width: auto;
+    background-color: var(--blue);
+
+    position:static;
+}
+
+.fa-github {
+    position: relative;
+    /* left: 45%; */
+}
+
+.fa-github:visited {
+    color: var(--blue);
+}
+
+.fa-envelope {
+    position: relative;
+    /* left: 50%; */
+}
+
+.fa-linkedin {
+    position: relative;
+    /* left: 55%; */
+}
+
+#gh-link:visited {
+    color: var(--blue);
+}
+
+#to-top-button {
+    display: none;
+    position: fixed;
+    right: 2%;
+    bottom: 10px;
+    background-color: var(--off-white);
+    height: 40px;
+    width: 40px;
+}
+
+#socials-area {
+    width: 400px;
+    border: 3px solid;
+    position: relative;
+    left: 50%;
+}
+
+#email-card {
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#github-card {
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#linkedin-card {
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
