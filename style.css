@@ -9,12 +9,14 @@
 body {
     -webkit-text-size-adjust: 100%;
     background-color: var(--med-green);
-    /* padding-left: 0%;
-    padding-right: 0%; */
     margin: 0%;
     padding: 0%;
     font-size: medium;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--blue);
+}
+
+p {
     color: var(--blue);
 }
 
@@ -26,15 +28,6 @@ h3 {
     font-size: 16px;
 }
 
-#resume-link {
-    color: black;
-    
-}
-
-p {
-    color: rgb(22, 44, 74);
-}
-
 #top-link {
     color:cyan;
     font-size: 8px;
@@ -44,10 +37,8 @@ p {
     text-align: center;
 }
 
-.link-align-center {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+.link:visited {
+    color: var(--blue);
 }
 
 #about-text-wrap {
@@ -69,38 +60,42 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    /* TODO: add a line underneath when you hover */
 }
 
-#footer {
-    height: 130px;
+#about-container {
+    height: 500px;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#education-card {
+    border: 1px solid;
+    align-self: center;
+    width: 75%;
+    height: 25%;
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+#nu-logo {
+    height: auto;
+}
+
+#education-text {
+    position: relative;
+    height: auto;
     width: auto;
-    background-color: var(--blue);
-
-    position:static;
-}
-
-.fa-github {
-    position: relative;
-    /* left: 45%; */
-}
-
-.fa-github:visited {
-    color: var(--blue);
-}
-
-.fa-envelope {
-    position: relative;
-    /* left: 50%; */
-}
-
-.fa-linkedin {
-    position: relative;
-    /* left: 55%; */
-}
-
-#gh-link:visited {
-    color: var(--blue);
 }
 
 #to-top-button {
@@ -139,4 +134,58 @@ p {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+}
+
+#projects-container {
+    height: 500px;
+    border: 2px solid;
+    display: flex;
+
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#footer {
+    height: 130px;
+    width: auto;
+    background-color: var(--blue);
+
+    position:static;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#footer-icon-container {
+    /* border: 3px solid;
+    border-color: white; */
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    position: relative;
+    width: 25%;
+    height: 15%;
+    left: 60%;
+    top: 50%;
+}
+
+.footer-icons {
+    color: var(--off-white);
+    /* margin-left: 15px;
+    margin-right: 15px; */
+}
+
+.footer-icons:visited {
+    color: var(--off-white);
+}
+
+#footer-name {
+    color: var(--off-white);
+    position: relative;
+    top: 50%;
+    left: 25px;
+    font-size: large;
 }
