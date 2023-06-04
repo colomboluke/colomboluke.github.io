@@ -97,6 +97,9 @@ h3 {
     position: relative;
     height: auto;
     width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #skills-container {
@@ -110,14 +113,27 @@ h3 {
     flex-wrap: wrap;
 }
 
-#to-top-button {
-    display: none;
-    position: fixed;
-    right: 2%;
-    bottom: 10px;
-    background-color: var(--off-white);
-    height: 40px;
-    width: 40px;
+#projects-container {
+    height: 500px;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#contact-container {
+    height: 500px;
+    border: 2px solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #socials-area {
@@ -148,16 +164,15 @@ h3 {
     flex-wrap: nowrap;
 }
 
-#projects-container {
-    height: 500px;
-    border: 2px solid;
-    display: flex;
-
-    position: relative;
-    margin-left: 10%;
-    margin-right: 10%;
+#to-top-button {
+    display: none;
+    position: fixed;
+    right: 2%;
+    bottom: 10px;
+    background-color: var(--off-white);
+    height: 40px;
+    width: 40px;
 }
-
 
 #footer {
     height: 130px;
@@ -165,7 +180,7 @@ h3 {
     background-color: var(--blue);
     margin: 0%;
 
-    position:static;
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
