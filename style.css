@@ -90,7 +90,8 @@ h3 {
 }
 
 #nu-logo {
-    height: auto;
+    height: 90%;
+    align-self: center;
 }
 
 #education-text {
@@ -136,11 +137,22 @@ h3 {
     margin-right: 10%;
 }
 
+#email-form-container {
+    border: 1px solid;
+    width: 25%;
+    height: 60%;
+    position: relative;
+    align-self: center;
+}
+
 #socials-area {
     width: 45%;
-    border: 3px solid;
+    height: 80%;
+    border: 1px solid;
+
     position: relative;
-    left: 50%;
+    left: 25%;
+    align-self: center;
 }
 
 #email-card {
