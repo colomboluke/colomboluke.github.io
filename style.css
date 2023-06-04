@@ -57,6 +57,7 @@ h3 {
 
     position: sticky;
     top: 0px;
+    z-index: 100;
 
     display: flex;
     flex-direction: row;
@@ -126,7 +127,7 @@ h3 {
 }
 
 #contact-container {
-    height: 500px;
+    height: 300px;
     border: 2px solid;
     display: flex;
     flex-direction: row;
@@ -148,32 +149,35 @@ h3 {
 #socials-area {
     width: 45%;
     height: 80%;
-    border: 1px solid;
 
     position: relative;
     left: 25%;
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-#email-card {
-    border: 1px solid;
+.socials-card {
+    height: 60px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card-text-container {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 10px;
 }
 
-#github-card {
-    border: 1px solid;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-#linkedin-card {
-    border: 1px solid;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+.card-text {
+    margin: 0%;
 }
 
 #to-top-button {
@@ -192,7 +196,7 @@ h3 {
     background-color: var(--blue);
     margin: 0%;
 
-    position: relative;
+    position: static;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
