@@ -9,6 +9,8 @@
 body {
     -webkit-text-size-adjust: 100%;
     background-color: var(--med-green);
+    /* background-color: white; */
+    bottom: 20px;
     margin: 0%;
     padding: 0%;
     font-size: medium;
@@ -68,13 +70,13 @@ h4 {
 
 #about-container {
     height: 700px;
-    /* border: 2px solid; */
+    border: 2px solid;
     display: flex;
     flex-direction: column;
 
     position: relative;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #education, #other-experience {
@@ -99,12 +101,12 @@ h4 {
 #education-text {
     border: 1px solid;
     position: relative;
-    height: 75%;
+    height: min-content;
     align-self: center;
     width: 70%;
+    align-items: left;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 #skills {
