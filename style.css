@@ -29,17 +29,12 @@ h3 {
     font-size: 20px;
 }
 
-#top-link {
-    color:cyan;
-    font-size: 8px;
+.link:visited, .link {
+    color: var(--blue);
 }
 
 .text-align-center {
     text-align: center;
-}
-
-.link:visited {
-    color: var(--blue);
 }
 
 #about-text-wrap {
@@ -53,7 +48,6 @@ h3 {
     height: 60px;
     width: auto;
     background-color: var(--off-white);
-    color: var(--blue);
 
     position: sticky;
     top: 0px;
@@ -124,6 +118,7 @@ h3 {
     position: relative;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 0%;
 }
 
 #contact-container {
@@ -136,6 +131,7 @@ h3 {
     position: relative;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 0%;
 }
 
 #email-form-container {
@@ -180,16 +176,6 @@ h3 {
     margin: 0%;
 }
 
-#to-top-button {
-    display: none;
-    position: fixed;
-    right: 2%;
-    bottom: 10px;
-    background-color: var(--off-white);
-    height: 40px;
-    width: 40px;
-}
-
 #footer {
     height: 130px;
     width: auto;
@@ -231,5 +217,15 @@ h3 {
     position: relative;
     top: 50%;
     left: 25px;
-    font-size: large;
+    font-size: small;
+}
+
+#to-top-button {
+    display: none;
+    position: fixed;
+    right: 2%;
+    bottom: 10px;
+    background-color: var(--off-white);
+    height: 40px;
+    width: 40px;
 }

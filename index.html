@@ -26,7 +26,7 @@
     <div id="header">
       <a>Luke Colombo</a>
       <div id="header-words">
-        <a class="link" href="#about">About</a>
+        <a class="link" href="#about-me">About</a>
         <a class="link" href="#projects">Projects</a>
         <a class="link" href="#contact">Contact</a>
       </div>
@@ -78,7 +78,7 @@
       <div id="contact-container">
         <!-- email form -->
         <div class="container" id="email-form-container">
-          <form id="email-form">
+          <form id="email-form" action="">
             <h3>Email Me</h3>
             <div class="form-box">
               <input
@@ -99,13 +99,13 @@
               />
             </div>
             <div class="form-box">
-              <input
+              <textarea
                 type="text"
                 id="message"
                 name="message"
                 placeholder="Message"
                 required
-              />
+              ></textarea>
             </div>
             <button type="submit">Send</button>
           </form>
@@ -139,12 +139,12 @@
       </div>
     </section>
     <!-- to top button -->
-    <button onclick="topFunction()" id="to-top-button" title="Go to top">
-      <i class="fa-solid fa-chevron-up fa-xl"></i>
-    </button>
     <!-- footer -->
     <div id="footer">
-      <a id="footer-name">Luke Colombo</a>
+      <button onclick="topFunction()" id="to-top-button" title="Go to top">
+        <i class="fa-solid fa-chevron-up fa-xl"></i>
+      </button>
+      <a id="footer-name">Made by Luke Colombo</a>
       <div id="footer-icon-container">
         <a
           class="footer-icons"
