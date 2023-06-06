@@ -68,15 +68,18 @@ h4 {
     /* TODO: add a line underneath when you hover */
 }
 
+.c1 {
+    border: 2px solid;
+    display: flex;
+    position: relative;
+    margin: 4%;
+    flex-wrap: nowrap;
+}
+
 #about-container {
     height: 900px;
     border: 2px solid;
-    display: flex;
     flex-direction: column;
-
-    position: relative;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 #education, #other-experience {
@@ -124,14 +127,9 @@ h4 {
 
 #projects-container {
     height: 500px;
-    border: 2px solid;
-    display: flex;
     flex-direction: column;
 
     position: relative;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 0%;
 }
 
 .project-image {
@@ -144,14 +142,8 @@ h4 {
 #contact-container {
     height: 300px;
     border: 2px solid;
-    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-
-    position: relative;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 0%;
 }
 
 #email-form-container {
