@@ -32,7 +32,7 @@ h3 {
 }
 
 h4 {
-    font-size: 14px;
+    font-size: 15px;
     margin: 5px;
     padding: 0px;
 }
@@ -69,7 +69,7 @@ h4 {
 }
 
 #about-container {
-    height: 700px;
+    height: 900px;
     border: 2px solid;
     display: flex;
     flex-direction: column;
@@ -82,18 +82,19 @@ h4 {
 #education, #other-experience {
     border: 1px solid;
     align-self: center;
-    width: 75%;
+    width: 100%;
     height: 25%;
 
     position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: center;
     gap: 5%;
 }
 
 #nu-logo {
-    height: 75%;
+    height: 60%;
     align-self: center;
     border: 1px solid"
 }
