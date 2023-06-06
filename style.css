@@ -88,6 +88,12 @@ h4 {
     flex-direction: column;
 }
 
+#about-me-title {
+    border: 1px solid;
+    width: 75%;
+    align-self: center;
+}
+
 #education, #other-experience {
     border: 1px solid;
     align-self: center;
