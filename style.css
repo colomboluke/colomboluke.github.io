@@ -117,7 +117,7 @@ h4 {
 #skills {
     border: 1px solid;
     height: 25%;
-    width: 75%;
+    width: 100%;
 
     position: relative;
     align-self: center;
@@ -190,11 +190,11 @@ h4 {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    overflow-wrap: break-word;
 }
 
 .card-text {
     margin: 0%;
-    overflow-wrap: break-word;
 }
 
 #footer {
