@@ -202,6 +202,7 @@ h4 {
 
 .card-text {
     margin: 0%;
+    overflow-wrap: break-word;
 }
 
 #footer {
