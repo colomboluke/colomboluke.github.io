@@ -13,7 +13,7 @@
 
 body {
     -webkit-text-size-adjust: 100%;
-    background-color: var(--med-green);
+    background-color: var(--off-white);
     /* background-color: white; */
     bottom: 20px;
     margin: 0%;
@@ -56,7 +56,7 @@ h4 {
     border: 1px solid;
     height: 60px;
     width: auto;
-    background-color: var(--off-white);
+    background-color: var(--med-green);
 
     position: sticky;
     top: 0px;
@@ -115,7 +115,7 @@ h4 {
 }
 
 .textbox {
-    /* border: 1px solid; */
+    border: 1px solid;
     position: relative;
     height: min-content;
     align-self: center;
@@ -189,7 +189,7 @@ h4 {
 
 .socials-card {
     height: 60px;
-    width: 50%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -198,19 +198,22 @@ h4 {
     gap: 5%;
 }
 
-.card-text-container {
-    border: 1px solid;
-    /* width: 120px; */
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    overflow-wrap: break-word;
+.s {
+    width: 80%;
 }
 
 .card-text {
     margin: 0%;
+}
+
+.fa-brands, .fa-solid {
+    /* border: 1px solid; */
+    width: 55px;
+}
+
+/* the width messed up this for some reason, band-aid fix here */
+.fa-chevron-up {
+    width: auto;
 }
 
 #footer {
