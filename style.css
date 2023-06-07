@@ -41,6 +41,12 @@ h3 {
 }
 
 h4 {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+a {
+    font-weight: bold;
     font-size: 15px;
 }
 
@@ -50,6 +56,10 @@ h4 {
 
 .link {
     text-decoration: none;
+}
+
+.link:hover {
+    border-bottom: 1px solid;
 }
 
 .text-align-center {
@@ -137,6 +147,7 @@ h4 {
 
 #other-experience {
     height: 10rem;
+    gap: 3%;
 }
 
 #nu-logo {
@@ -158,10 +169,10 @@ h4 {
 }
 
 #skills {
+    border: none;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 75%;
-    height: 
 }
 
 .skill {
