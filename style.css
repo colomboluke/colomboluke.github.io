@@ -48,6 +48,10 @@ h4 {
     color: var(--blue);
 }
 
+.link {
+    text-decoration: none;
+}
+
 .text-align-center {
     text-align: center;
 }
@@ -73,6 +77,21 @@ h4 {
     /* TODO: add a line underneath when you hover */
 }
 
+#header-words {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    width: min-content;
+    gap: 15%;
+}
+
+.hw {
+    height: min-content;
+    width: 1.5 * min-content;
+    margin: 10px;
+    padding: 2px;
+}
+
 .spacer {
     height: 50px;
     width: 100%;
@@ -93,7 +112,7 @@ h4 {
 }
 
 #about-me-title {
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 75%;
     align-self: center;
 }
