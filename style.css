@@ -71,7 +71,6 @@ a {
 }
 
 #header {
-    border: 1px solid;
     height: 60px;
     width: auto;
     background-color: var(--med-green);
@@ -90,9 +89,9 @@ a {
 #header-words {
     display: flex;
     flex-direction: row;
-    justify-content: baseline;
-    width: min-content;
-    gap: 15%;
+    justify-content: center;
+    width: 300px;
+    gap: 10%;
 }
 
 .hw {
@@ -125,6 +124,8 @@ a {
     /* border: 1px solid; */
     width: 75%;
     align-self: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
 }
 
 .about-div {
@@ -182,7 +183,6 @@ a {
     margin: 1rem;
     padding: .5rem;
 }
-
 
 #projects-container {
     height: 900px;
