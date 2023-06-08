@@ -4,6 +4,7 @@
     --med-green: rgb(92, 219, 149);
     --pale-green: rgb(142, 228, 143);
     --off-white: rgb(237, 245, 225);
+    --purple: #5d2f86;
 }
 /* 
 *{
@@ -41,13 +42,17 @@ h3 {
 }
 
 h4 {
-    font-weight: normal;
+    font-weight: bold;
     font-size: 15px;
+}
+
+h5 {
+    font-weight: normal;
+    font-size: 14px;
 }
 
 a {
     font-weight: bold;
-    font-size: 15px;
 }
 
 .link:visited, .link {
@@ -68,6 +73,7 @@ a {
 
 .sh {
     box-shadow: 5px 5px lightgray;
+    border: 1px solid;
 }
 
 #header {
@@ -144,6 +150,7 @@ a {
     justify-content: center;
     gap: 5%;
     height: 15rem;
+    margin: 5px;
 }
 
 #other-experience {
@@ -158,7 +165,7 @@ a {
 }
 
 .textbox {
-    border: 1px solid;
+    /* border: 1px solid; */
     position: relative;
     height: min-content;
     align-self: center;
@@ -196,27 +203,28 @@ a {
 .project {
     border: 1px solid;
     height: 30%;
-    width: 45%;
-    margin: 5px;
+    width: 48%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     overflow-wrap: break-word;
 }
 
 .project-image-cont {
-    width: 50%;
+    position: relative;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    border: 3px solid;
 }
 
 .project-image {
-    max-width: 100%;
-    max-height: 100%;
-    position: relative;
+    width: inherit;
+    height: inherit;
 }
 
 .p {
-    border: 1px solid;
     height: 100%;
+    width: 75%;
     justify-content: center;    
 }
 
@@ -279,7 +287,7 @@ a {
     width: 55px;
 }
 
-/* the width messed up this for some reason, band-aid fix here */
+/* the width of fa-solid messed up this for some reason, band-aid fix here */
 .fa-chevron-up {
     width: auto;
 }

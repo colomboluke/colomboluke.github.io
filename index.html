@@ -3,7 +3,7 @@
 <!-- Projects has an image of each project plus some explanation -->
 <!-- Contact has: email form, GitHub, LinkedIn -->
 <!-- Footer has the icons again and an arrow button that takes you back to top -->
-<!-- TODO: header, technical skills, personal projects, complete email form, format contact section, 
+<!-- TODO: technical skills, personal projects, complete email form, format contact section, 
   remove space below footer, add comments in code, change color scheme -->
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +37,7 @@
         <!-- <div class="spacer"></div> -->
         <div id="about-me-title" class="text-align-center">
           <h2 class="text-align-center">About Me</h2>
-          <h4 id="resume-link">
+          <h5 id="resume-link">
             Note: click
             <a
               class="link"
@@ -47,7 +47,7 @@
               >here</a
             >
             to view or download my resume as a PDF.
-          </h4>
+          </h5>
           <p class="text-align-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
             nulla ratione aliquam inventore deserunt, quam consequatur sunt
@@ -103,44 +103,67 @@
       <h2 id="projects-title" class="text-align-center">Personal Projects</h2>
       <div id="projects-container" class="c1">
         <div class="project">
-          <div class="project-image">
-            <img class="project-image" src="images/funnyPanda.jpg" />
-          </div>
+          <div class="project-image-cont"></div>
           <div class="p textbox">
             <h4>Connect 4 (Java)</h4>
-            <p>Description of the project goes here</p>
+            <p>
+              Outside of class I recreated Connect 4, playable in console and on
+              a GUI created with the Swing library. I used model, view,
+              controlled architecture to allow for different boards, players.
+              Currently adding capabilities to let user play against the
+              computer, using the strategy design pattern.
+            </p>
           </div>
         </div>
         <div class="project">
-          <div class="project-image"></div>
+          <div class="project-image-cont"></div>
           <div class="p textbox">
             <h4>RAFT Implementation (Python)</h4>
-            <p>Description of the project goes here</p>
+            <p>
+              For my CS3700 final, we implemented the RAFT algorithm in a
+              simulated distributed database. We had keep in mind query latency,
+              consistency, and packet overhead, with simulations for various
+              unreliable networks. Built using TCP/IP sockets in Python and
+              object oriented programming.
+            </p>
           </div>
         </div>
         <div class="project">
-          <div class="project-image"></div>
+          <div class="project-image-cont"></div>
           <div class="p textbox">
             <h4>FTP Client (Python)</h4>
-            <p>Description of the project goes here</p>
+            <p>
+              Project #2 for CS3700; a client that can connect to an FTP server
+              and perform operations like copy, move, and make/remove directory.
+              Runs on the command line using the argparse module.
+            </p>
           </div>
         </div>
         <div class="project">
-          <div class="project-image"></div>
+          <div class="project-image-cont"></div>
           <div class="p textbox">
             <h4>Web Crawler (Python)</h4>
-            <p>Description of the project goes here</p>
+            <p>
+              A web crawler/spider that traverses through the CS3700 class
+              website. Intended to familiarize us with various HTTP methods as
+              well as parsing HTML
+            </p>
           </div>
         </div>
         <div class="project">
-          <div class="project-image"></div>
+          <div class="project-image-cont"></div>
           <div class="p textbox">
             <h4>Snake (Racket)</h4>
-            <p>Description of the project goes here</p>
+            <p>
+              My first personal project, made during my first ever CS class, was
+              recreating Snake. I used a lot of the principles and design
+              patterns we were learning (recursion, linked lists, abstraction)
+              and had a lot of fun experimenting with coding on my own.
+            </p>
           </div>
         </div>
         <div class="project">
-          <div class="project-image"></div>
+          <div class="project-image-cont"></div>
           <div class="p textbox">
             <h4>Reliable Transport Protocol (Python)</h4>
             <p>Description of the project goes here</p>
@@ -190,7 +213,9 @@
         <!-- socials card -->
         <div class="container" id="socials-area">
           <div class="socials-card">
-            <i class="fa-solid fa-envelope" style="font-size: 3.5rem"></i>
+            <a href="mailto:lukedwardc@gmail.com" class="link">
+              <i class="fa-solid fa-envelope" style="font-size: 3.5rem"></i
+            ></a>
             <div class="s textbox">
               <h3 class="card-text">Email</h3>
               <p class="card-text">lukedwardc@gmail.com</p>
@@ -241,7 +266,9 @@
         >
           <i class="fa-brands fa-github fa-2xl"></i
         ></a>
-        <a class="footer-icons"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+        <a class="footer-icons" href="mailto:lukedwardc@gmail.com">
+          <i class="fa-solid fa-envelope fa-2xl"></i>
+        </a>
         <a
           class="footer-icons"
           href="https://www.linkedin.com/in/lukecolombo/"
