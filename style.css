@@ -5,12 +5,12 @@
     --pale-green: rgb(142, 228, 143);
     --off-white: rgb(237, 245, 225);
     --purple: #5d2f86;
+    --red: rgb(74, 13, 10);
 }
-/* 
-*{
-    margin: 0px;
-    padding: 0px;
-} */
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 body {
     -webkit-text-size-adjust: 100%;
@@ -20,7 +20,6 @@ body {
     margin: 0%;
     padding: 0%;
     font-size: medium;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--blue);
 }
 
@@ -47,7 +46,7 @@ h4 {
 }
 
 h5 {
-    font-weight: normal;
+    font-weight: bold;
     font-size: 14px;
 }
 
@@ -59,11 +58,11 @@ a {
     color: var(--blue);
 }
 
-.link {
+.link, .wlink {
     text-decoration: none;
 }
 
-.link:hover {
+.link:hover, .wlink:hover {
     border-bottom: 1px solid;
 }
 
@@ -79,7 +78,7 @@ a {
 #header {
     height: 60px;
     width: auto;
-    background-color: var(--med-green);
+    background-color: var(--red);
 
     position: sticky;
     top: 0px;
@@ -100,11 +99,16 @@ a {
     gap: 10%;
 }
 
+.wlink, .wlink:visited {
+    color: var(--off-white);
+}
+
 .hw {
     height: min-content;
     width: 1.5 * min-content;
     margin: 10px;
     padding: 2px;
+    color: var(--off-white);
 }
 
 .spacer {
@@ -113,7 +117,6 @@ a {
 }
 
 .c1 {
-    border: 2px solid;
     display: flex;
     position: relative;
     margin: 4%;
@@ -122,12 +125,10 @@ a {
 
 #about-container {
     height: min-content;
-    border: 2px solid;
     flex-direction: column;
 }
 
 #about-me-title {
-    /* border: 1px solid; */
     width: 75%;
     align-self: center;
     margin-top: 5%;
@@ -135,13 +136,16 @@ a {
 }
 
 .about-div {
-    border: 1px solid;
     align-self: center;
     display: flex;
     width: 100%;
     height: min-content;
     position: relative;
     margin: 15px;
+}
+
+.spacer2 {
+    height: 35px;
 }
 
 #education, #other-experience {
@@ -153,19 +157,34 @@ a {
     margin: 5px;
 }
 
+#education {
+    height: 10rem;
+    width: 50rem;
+    align-items: center;
+    overflow-wrap: break-word;
+}
+
+#education-text ul{
+    list-style: none;
+}
+
 #other-experience {
     height: 10rem;
     gap: 3%;
 }
 
 #nu-logo {
-    height: 50%;   
+    height: 7.5rem;   
     align-self: center;
-    border: 1px solid"
+}
+
+#education-text {
+    height: 100%;
+    justify-content: center;
+    gap: 0%;
 }
 
 .textbox {
-    /* border: 1px solid; */
     position: relative;
     height: min-content;
     align-self: center;
@@ -177,7 +196,6 @@ a {
 }
 
 #skills {
-    border: none;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 75%;
@@ -201,7 +219,6 @@ a {
 }
 
 .project {
-    border: 1px solid;
     height: 30%;
     width: 48%;
     display: flex;
@@ -214,12 +231,12 @@ a {
     align-self: center;
     width: 100%;
     height: 100%;
-    border: 3px solid;
 }
 
-.project-image {
+.p-img {
     width: inherit;
     height: inherit;
+    object-fit: cover;
 }
 
 .p {
@@ -229,27 +246,71 @@ a {
 }
 
 #contact-container {
-    height: 300px;
-    border: 2px solid;
+    height: 500px;
     flex-direction: row;
     flex-wrap: nowrap;
 }
 
 #email-form-container {
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 50%;
     height: 100%;
     position: relative;
-    align-self: center;
-    align-items: right;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.form-box {
+#email-form-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+
+#email-form-title i {
+    margin-right: 5px;
+}
+
+form {
+    /* border: 2px solid; */
+    padding: 25px;
+    width: 80%;
+    box-shadow: 0px 2px 5px rgba(50, 50, 50, .25);
+}
+
+form input, textarea {
     width: 100%;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 1px solid var(--blue);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid;
+    outline: none;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#input-field {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#input-field i {
+    margin-right: 15px;
+    width: 15px;
+}
+
+.send-btn {
+    width: 20%;
+    border: none;
+    background-color: var(--blue);
+    color:rgb(237, 245, 225);
+    padding: 6px 0;
+    border-radius: 50px;
+    font-size: 17px;
 }
 
 #socials-area {
@@ -257,7 +318,8 @@ a {
     height: 100%;
 
     position: relative;
-    align-self: center;
+    /* align-self: center; */
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -271,9 +333,12 @@ a {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-    gap: 5%;
+
+    /* border: 1px solid; */
+    box-shadow: 4px 2px 2px rgba(50, 50, 50, .25);
 }
 
+/* s for socials */
 .s {
     width: 80%;
 }
@@ -282,23 +347,20 @@ a {
     margin: 0%;
 }
 
-.fa-brands, .fa-solid {
-    /* border: 1px solid; */
+/* si for socials icon */
+.si {
     width: 55px;
-}
-
-/* the width of fa-solid messed up this for some reason, band-aid fix here */
-.fa-chevron-up {
-    width: auto;
+    margin: 15px;
 }
 
 #footer {
-    height: 130px;
+    height: 120px;
     width: auto;
     background-color: var(--blue);
     margin: 0%;
 
-    position: static;
+    position: relative;
+    bottom: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -344,4 +406,5 @@ a {
     background-color: var(--off-white);
     height: 40px;
     width: 40px;
+    border-color: var(--blue);
 }

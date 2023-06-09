@@ -3,8 +3,8 @@
 <!-- Projects has an image of each project plus some explanation -->
 <!-- Contact has: email form, GitHub, LinkedIn -->
 <!-- Footer has the icons again and an arrow button that takes you back to top -->
-<!-- TODO: technical skills, personal projects, complete email form, format contact section, 
-  remove space below footer, add comments in code, change color scheme -->
+<!-- TODO (not vital): change color scheme, add links to code in projects section, remove space below footer, 
+  complete email form, add personal interests, make style more consistent-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,9 +26,9 @@
     <div id="header">
       <a class="hw">Luke Colombo</a>
       <div id="header-words">
-        <a class="link hw" href="#about-me">About</a>
-        <a class="link hw" href="#projects">Projects</a>
-        <a class="link hw" href="#contact">Contact</a>
+        <a class="hw wlink" href="#about-me">About</a>
+        <a class="hw wlink" href="#projects">Projects</a>
+        <a class="hw wlink" href="#contact">Contact</a>
       </div>
     </div>
     <!-- about me section -->
@@ -48,14 +48,15 @@
             >
             to view or download my resume as a PDF.
           </h5>
-          <p class="text-align-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-            nulla ratione aliquam inventore deserunt, quam consequatur sunt
-            soluta, odio cupiditate odit saepe ab perspiciatis. Quasi dolor
-            dolorum iste ducimus velit exercitationem quidem nisi fuga
-            perferendis, dicta id aperiam reprehenderit ipsum. Officia mollitia
-            facere nostrum omnis aliquid, sint amet pariatur animi.
-          </p>
+          <div id="about-statement">
+            Hello! I'm Luke, a rising junior and a computer science & psychology
+            major. I've been passionate about CS ever since my first college
+            class, and hope to pursue software engineering, AI, or network
+            science. I eventually want to combine CS with psychology or another
+            social science. When I'm not coding, I like playing pickup
+            basketball and volleyball, playing an instrument, or reading.
+          </div>
+          <p class="text-align-center"></p>
         </div>
         <h3 class="text-align-center">Education</h3>
         <div id="education" class="about-div">
@@ -70,12 +71,17 @@
               Bachelor of Science in Computer Science & Cognitive Psychology
             </p>
             <p>GPA: 3.52/4.0</p>
+            <p>
+              Relevant Coursework: Algorithms & Data, Networks & Distributed
+              Systems, Statistics, Object Oriented Design, Discrete Structures
+            </p>
           </div>
         </div>
+        <div class="spacer"></div>
         <h3 class="text-align-center">Technical Skills</h3>
         <div id="skills" class="about-div">
           <div class="skill sh">Java</div>
-          <div class="skill sh">Object Oriented Design</div>
+          <div class="skill sh">OO Design Patterns</div>
           <div class="skill sh">Python</div>
           <div class="skill sh">Command Line Scripting</div>
           <div class="skill sh">HTTP</div>
@@ -84,6 +90,7 @@
           <div class="skill sh">LaTeX</div>
           <div class="skill sh">TCP/IP Sockets</div>
         </div>
+        <div class="spacer2"></div>
         <h3 class="text-align-center">Other Experience</h3>
         <div id="other-experience" class="about-div">
           <div class="textbox sh">
@@ -92,7 +99,7 @@
           </div>
           <div class="textbox sh">
             <h4>Soundwaves (2019 - 2020)</h4>
-            <p>Piano & Drum Volunteer Tutor</p>
+            <p>Piano & Drum Tutor</p>
           </div>
         </div>
       </div>
@@ -100,10 +107,12 @@
     <!-- personal projects section -->
     <section id="projects">
       <div class="spacer"></div>
-      <h2 id="projects-title" class="text-align-center">Personal Projects</h2>
+      <h2 id="projects-title" class="text-align-center">Projects</h2>
       <div id="projects-container" class="c1">
-        <div class="project">
-          <div class="project-image-cont"></div>
+        <div class="project sh">
+          <div class="project-image-cont">
+            <img src="images/connect4_ss.png" class="p-img" />
+          </div>
           <div class="p textbox">
             <h4>Connect 4 (Java)</h4>
             <p>
@@ -115,8 +124,10 @@
             </p>
           </div>
         </div>
-        <div class="project">
-          <div class="project-image-cont"></div>
+        <div class="project sh">
+          <div class="project-image-cont">
+            <img src="images/raft_ss.png" class="p-img" />
+          </div>
           <div class="p textbox">
             <h4>RAFT Implementation (Python)</h4>
             <p>
@@ -128,8 +139,10 @@
             </p>
           </div>
         </div>
-        <div class="project">
-          <div class="project-image-cont"></div>
+        <div class="project sh">
+          <div class="project-image-cont">
+            <img src="images/ftp_ss.png" class="p-img" />
+          </div>
           <div class="p textbox">
             <h4>FTP Client (Python)</h4>
             <p>
@@ -139,19 +152,23 @@
             </p>
           </div>
         </div>
-        <div class="project">
-          <div class="project-image-cont"></div>
+        <div class="project sh">
+          <div class="project-image-cont">
+            <img src="images/web_crawler_ss.png" class="p-img" />
+          </div>
           <div class="p textbox">
             <h4>Web Crawler (Python)</h4>
             <p>
               A web crawler/spider that traverses through the CS3700 class
               website. Intended to familiarize us with various HTTP methods as
-              well as parsing HTML
+              well as parsing HTML.
             </p>
           </div>
         </div>
-        <div class="project">
-          <div class="project-image-cont"></div>
+        <div class="project sh">
+          <div class="project-image-cont">
+            <img src="images/snake_ss.png" class="p-img" />
+          </div>
           <div class="p textbox">
             <h4>Snake (Racket)</h4>
             <p>
@@ -162,11 +179,18 @@
             </p>
           </div>
         </div>
-        <div class="project">
-          <div class="project-image-cont"></div>
+        <div class="project sh">
+          <div class="project-image-cont">
+            <img src="images/tcp_ss.png" class="p-img" />
+          </div>
           <div class="p textbox">
             <h4>Reliable Transport Protocol (Python)</h4>
-            <p>Description of the project goes here</p>
+            <p>
+              This project was to design a protocol on top of UDP sockets that
+              would reliably transfer data packets between a sender and a
+              receiver. This was heavily based on TCP, and was tested over
+              various forms of unreliable networks.
+            </p>
           </div>
         </div>
       </div>
@@ -178,42 +202,34 @@
       <div id="contact-container" class="c1">
         <!-- email form -->
         <div class="container" id="email-form-container">
-          <form id="email-form" action="">
-            <h3>Email Me</h3>
-            <div class="form-box">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Name"
-                required
-              />
+          <form action="">
+            <div id="email-form-title">
+              <i class="fa-brands fa-telegram"></i>
+              <h3>Email Me</h3>
             </div>
-            <div class="form-box">
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Subject"
-                required
-              />
+            <div id="input-field">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" name="Name" placeholder="Name" />
             </div>
-            <div class="form-box">
+            <div id="input-field">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="text" name="Your Email" placeholder="Email" />
+            </div>
+            <div id="input-field">
+              <i class="fa-solid fa-message"></i>
               <textarea
-                type="text"
-                id="message"
-                name="message"
+                name="Message"
                 placeholder="Message"
-                required
+                rows="10"
               ></textarea>
             </div>
-            <button type="submit">Send</button>
+            <input type="submit" value="Submit" class="send-btn" />
           </form>
         </div>
         <!-- socials card -->
         <div class="container" id="socials-area">
           <div class="socials-card">
-            <a href="mailto:lukedwardc@gmail.com" class="link">
+            <a href="mailto:lukedwardc@gmail.com" class="link si">
               <i class="fa-solid fa-envelope" style="font-size: 3.5rem"></i
             ></a>
             <div class="s textbox">
@@ -225,11 +241,11 @@
             <a
               href="https://github.com/lukecolombo03"
               target="_blank"
-              class="link"
+              class="link si"
             >
               <i class="fa-brands fa-github" style="font-size: 3.5rem"> </i>
             </a>
-            <div class="textbox">
+            <div class="s textbox">
               <h3 class="card-text">GitHub</h3>
               <p class="card-text">lukecolombo03</p>
             </div>
@@ -238,11 +254,11 @@
             <a
               href="https://www.linkedin.com/in/lukecolombo/"
               target="_blank"
-              class="link"
+              class="link si"
             >
               <i class="fa-brands fa-linkedin" style="font-size: 3.5rem"></i
             ></a>
-            <div class="textbox">
+            <div class="s textbox">
               <h3 class="card-text">LinkedIn</h3>
               <p class="card-text">lukecolombo</p>
             </div>
