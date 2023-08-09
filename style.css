@@ -5,7 +5,7 @@
     --pale-green: rgb(142, 228, 143);
     --off-white: rgb(237, 245, 225);
     --purple: #5d2f86;
-    --red: rgb(99, 21, 17);
+    --red: rgb(106, 12, 7);
 }
 
 * {
@@ -129,7 +129,7 @@ a {
 }
 
 #about-me-title {
-    width: 75%;
+    width: 90%;
     align-self: center;
     margin-top: 5%;
     margin-bottom: 2%;
@@ -154,12 +154,12 @@ a {
     justify-content: center;
     gap: 5%;
     height: 15rem;
+    width: 150rem;
     margin: 5px;
 }
 
 #education {
     height: 10rem;
-    width: 50rem;
     align-items: center;
     overflow-wrap: break-word;
 }
@@ -198,7 +198,7 @@ a {
 #skills {
     flex-wrap: wrap;
     justify-content: center;
-    width: 75%;
+    width: 85%;
 }
 
 .skill {
