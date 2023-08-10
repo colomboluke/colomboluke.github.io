@@ -1,9 +1,10 @@
 :root {
     --blue: rgb(22, 56, 90);
+    --text-blue: rgb(22, 56, 90);
     --muddy-green: rgb(55, 150, 131);
     --med-green: rgb(92, 219, 149);
     --pale-green: rgb(142, 228, 143);
-    --off-white: rgb(237, 245, 225);
+    --off-white: rgb(241, 245, 225);
     --purple: #5d2f86;
     --red: rgb(106, 12, 7);
 }
@@ -198,7 +199,7 @@ a {
 #skills {
     flex-wrap: wrap;
     justify-content: center;
-    width: 85%;
+    width: 90%;
 }
 
 .skill {
@@ -226,6 +227,18 @@ a {
     overflow-wrap: break-word;
 }
 
+.project-link, .project-link:visited {
+    height: fit-content;
+    width: fit-content;
+    color: var(--blue);
+}
+
+.project-link-icon {
+    font-size: 50px;
+    padding-top: 14px;
+    padding-left: 10px;
+}
+
 .text {
     object-fit: scale-down;
 }
@@ -247,7 +260,8 @@ a {
     height: 100%;
     width: 75%;
     justify-content: center;  
-    word-wrap:break-word ;  
+    word-wrap: break-word;  
+    
 }
 
 #contact-container {
@@ -370,6 +384,7 @@ form input, textarea {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 #footer-icon-container {
@@ -379,12 +394,14 @@ form input, textarea {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-evenly;
-
+    width: 160px;
+    padding-right: 10%;
+/* 
     position: relative;
     width: 160px;
     height: 15%;
     right: 5%;
-    top: 50%;
+    top: 50%; */
 }
 
 .footer-icons {
@@ -397,19 +414,18 @@ form input, textarea {
 
 #footer-name {
     color: var(--off-white);
-    position: relative;
-    top: 50%;
-    left: 25px;
+    /* position: relative; */
     font-size: small;
+    padding-left: 10%;
 }
 
 #to-top-button {
     display: none;
     position: fixed;
     right: 2%;
-    bottom: 10px;
+    bottom: 25px;
     background-color: var(--off-white);
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border-color: var(--blue);
 }
