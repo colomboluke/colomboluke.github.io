@@ -1,9 +1,9 @@
 :root {
-    --text: ;
-    --background: ;
-    --primary: ;
-    --secondary: ;
-    --accent: ;
+    --text: rgb(5, 3, 21);
+    --background: rgb(251, 251, 254);
+    --primary: rgb(78, 73, 178);
+    --secondary: rgb(222, 220, 255);
+    --accent: rgb(67, 59, 255);
 }
 
 body {
@@ -12,6 +12,7 @@ body {
     margin: 0%;
     padding: 0%;
     font-size: 90%;
+    background-color: var(--background);
 }
 
 section {
@@ -22,30 +23,18 @@ section {
 h1 {
     font-size: 44px;
     font-weight: bolder;
-    /* background-color: red; */
 }
 
 h2 {
     font-size: 30px;
-    /* background-color: orange; */
 }
 
 h3 {
     font-weight: normal;
-    /* background-color: yellow; */
 }
 
 h4 {
     font-size: 16px;
-    /* background-color: green; */
-}
-
-h5 {
-    /* background-color: blue; */
-}
-
-h5 {
-    /* background-color: purple; */
 }
 
 h1,
@@ -55,6 +44,7 @@ h4,
 h5,
 p {
     margin: 0px;
+    color: var(--text);
 }
 
 .text-align-center {
@@ -91,6 +81,10 @@ p {
     font-weight: bold;
 }
 
+.link {
+    color: var(--primary);
+}
+
 /* ---HEADER--- */
 
 #header {
@@ -106,12 +100,13 @@ p {
     justify-content: space-around;
     align-items: center;
 
-    background-color: lightgray;
+    background-color: var(--text);
     outline: 2px solid;
 }
 
 #header-name {
     font-size: 20px;
+    color: var(--secondary);
 }
 
 .header-link {
@@ -119,11 +114,12 @@ p {
     margin-right: 10px;
     font-size: 18px;
     text-decoration: none;
+    color: var(--background);
 }
 
 .header-link:hover {
     /* text-decoration: underline 2px; */
-    color: green;
+    color: var(--secondary);
 }
 
 #subtitle {
@@ -160,6 +156,12 @@ p {
 
 #resume-link-text {
     width: 55%;
+    text-decoration: none;
+}
+
+#resume-link-text:hover {
+    width: 55%;
+    text-decoration: underline;
 }
 
 .spacer-1 {
@@ -183,14 +185,20 @@ p {
 
 /* ---EDUCATION--- */
 
+#ed-container {
+    width: 100%;
+    /* background-color: var(--primary); */
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
 #education {
     margin: auto;
     width: 48%;
     margin-top: 50px;
-    /* border: 2px solid red; */
 }
 
-#ed-container {
+#ed-card {
     display: flex;
     flex-direction: row-reverse;
     /* border: 2px solid blue; */
@@ -202,6 +210,7 @@ p {
     margin-bottom: 4px;
     font-size: 16px;
     /* border: 2px solid green; */
+    color: var(--text);
 }
 
 .edu-title {
@@ -470,6 +479,7 @@ p {
     margin-top: 15px;
     margin-bottom: 5px;
     margin-left: 0px;
+    color: var(--primary);
 }
 
 /* ---CONTACT--- */
@@ -541,6 +551,8 @@ p {
     font-family: 'Source Sans Pro', 'Roboto Slab', Verdana;
     font-weight: 600;
     border-radius: 6px;
+    background-color: var(--primary);
+    color: rgb(251, 251, 254);
 }
 
 /* ---FOOTER--- */
@@ -604,6 +616,7 @@ p {
 .footer-link {
     text-decoration: none;
     font-size: 15px;
+    color: var(--primary);
 }
 
 #to-top-button {
