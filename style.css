@@ -2,8 +2,8 @@
     --text: rgb(5, 3, 21);
     --background: rgb(251, 251, 254);
     --primary: rgb(78, 73, 178);
-    --secondary: rgb(222, 220, 255);
-    --accent: rgb(67, 59, 255);
+    --secondary: rgb(190, 173, 196);
+    --accent: rgb(94, 114, 170);
 }
 
 body {
@@ -17,7 +17,6 @@ body {
 
 section {
     /* outline: 2px solid; */
-
 }
 
 h1 {
@@ -82,7 +81,7 @@ p {
 }
 
 .link {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 .spacer {
@@ -111,7 +110,10 @@ p {
 
 #header-name {
     font-size: 20px;
-    color: var(--secondary);
+}
+
+.text-highlight-color {
+    color: var(--primary);
 }
 
 .header-link {
@@ -124,7 +126,7 @@ p {
 
 .header-link:hover {
     /* text-decoration: underline 2px; */
-    color: var(--secondary);
+    color: var(--accent);
 }
 
 #subtitle {
@@ -141,7 +143,6 @@ p {
     margin: auto;
     margin-top: 70px;
     font-size: 1.1rem;
-
     /* background-color: var(--primary); */
 }
 
@@ -159,12 +160,13 @@ p {
 }
 
 #resume-link-text {
-    width: 55%;
+    width: auto;
+    font-weight: bold;
     text-decoration: none;
+    color: var(--accent);
 }
 
 #resume-link-text:hover {
-    width: 55%;
     text-decoration: underline;
 }
 
@@ -188,6 +190,7 @@ p {
 
 .under-photo-icon {
     font-size: 2rem;
+    color: var(--primary);
 }
 
 .under-photo-icon:hover {
@@ -277,7 +280,6 @@ p {
 }
 
 .skill-text {
-    background-color: white;
     font-size: 14px;
     margin-top: 10px;
 }
@@ -434,7 +436,7 @@ p {
 /* ---PROJECTS--- */
 
 #projects {
-    width: 90%;
+    width: 92%;
     margin: auto;
     margin-top: 70px;
     /* border: 4px solid pink; */
@@ -500,7 +502,8 @@ p {
 }
 
 .p-link:hover {
-    font-size: 55px;
+    /* font-size: 55px; */
+    color: var(--text);
 }
 
 /* ---CONTACT--- */
@@ -520,6 +523,10 @@ p {
 #contact-content {
     display: flex;
     flex-flow: row nowrap;
+}
+
+.contact-link {
+    color: var(--accent);
 }
 
 #email-form-container {
@@ -570,8 +577,8 @@ p {
     height: 15%;
     font-size: 18px;
     font-family: 'Source Sans Pro', 'Roboto Slab', Verdana;
-    font-weight: 600;
-    border-radius: 6px;
+    font-weight: bold;
+    border-radius: 10px;
     background-color: var(--primary);
     color: rgb(251, 251, 254);
 }
@@ -637,6 +644,12 @@ p {
 .footer-link {
     text-decoration: none;
     font-size: 15px;
+    color: var(--primary);
+}
+
+.footer-icon {
+    margin-bottom: 10px;
+    margin-top: 0px;
     color: var(--primary);
 }
 
