@@ -85,6 +85,11 @@ p {
     color: var(--primary);
 }
 
+.spacer {
+    height: 70px;
+    width: 100%;
+}
+
 /* ---HEADER--- */
 
 #header {
@@ -125,7 +130,6 @@ p {
 #subtitle {
     font-size: 16px;
     font-weight: bold;
-    background-color: white;
 }
 
 /* ---ABOUT--- */
@@ -138,7 +142,7 @@ p {
     margin-top: 70px;
     font-size: 1.1rem;
 
-    /* ^^ aligns itself center */
+    /* background-color: var(--primary); */
 }
 
 #pfp {
@@ -173,7 +177,6 @@ p {
     margin: 4px;
 }
 
-
 #under-photo-icons {
     display: flex;
     flex-direction: row;
@@ -181,6 +184,15 @@ p {
     justify-content: center;
     gap: 30px;
     margin-top: 20px;
+}
+
+.under-photo-icon {
+    font-size: 2rem;
+}
+
+.under-photo-icon:hover {
+    font-size: 1rem;
+    color: rgb(5, 3, 21);
 }
 
 /* ---EDUCATION--- */
@@ -236,6 +248,10 @@ p {
     margin: auto;
     margin-top: 70px;
     width: 75%;
+}
+
+#skills-spacer {
+    height: 70px;
 }
 
 #skills-title {
@@ -427,6 +443,7 @@ p {
 .projects-grid {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 
 .project {
@@ -480,6 +497,10 @@ p {
     margin-bottom: 5px;
     margin-left: 0px;
     color: var(--primary);
+}
+
+.p-link:hover {
+    font-size: 55px;
 }
 
 /* ---CONTACT--- */
