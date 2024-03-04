@@ -502,7 +502,6 @@ body {
         font-size: 45px;
         margin-top: 15px;
         margin-bottom: 5px;
-        margin-left: 50%;
         color: var(--primary);
     }
 
@@ -1151,6 +1150,7 @@ body {
         margin-top: 15px;
         margin-bottom: 5px;
         margin-left: 0px;
+
         color: var(--primary);
     }
 
