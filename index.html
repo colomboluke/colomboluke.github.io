@@ -24,7 +24,7 @@
       <a href="#skills" class="header-link">Skills</a> 
       <a href="#experience" class="header-link">Experience</a>
       <a href="#projects" class="header-link">Projects</a>
-      <a href="#contact" class="header-link">Contact</a>
+      <a href="#footer" class="header-link">Contact</a>
       <!-- TODO: add light/dark mode button here -->
       <!-- ALSO TODO: add section for papers written? -->
     </div>
@@ -47,51 +47,80 @@
         </a>
       </div>
     </div>
-    <div id="about-text" class="col">
+    <div id="about-text-cont" class="col">
       <h1 class="abt-text">Luke Colombo</h1>
-      <h3 id="subtitle" class="abt-text">Computer Science & Psychology</h3>
+      <h3 id="subtitle" class="abt-text">Computer Science & Psychology Student</h3>
       <div class="spacer-1"></div>
       <p class="abt-text">
-        Hi, I'm Luke, a third-year <span class="text-highlight-color">computer science & cognitive psychology</span>
-        major at <span class="text-highlight-color">Northeastern University</span>. I've been passionate about CS ever since my first college
-        class, and hope to pursue software engineering, AI, or network
-        science. I eventually want to combine CS with psychology or another
-        social science in the field of research. I have experience coding in 
-        <span class="text-highlight-color">Java</span>, <span class="text-highlight-color">Python</span>, <span class="text-highlight-color">MySQL</span>, and the front end stack (which I learned by creating
-        this website!)
+        I'm a fourth-year <a class="link highlight-text" href="https://www.northeastern.edu/" target="_blank">Northeastern University</a> 
+        student from San Francisco, California. I have a combined major in 
+        computer science and psychology, with interests in cognitive science, software engineering, and web development. I've worked 
+        as a software engineer at <a class="link highlight-text" href="https://agrofocal.ai/" target="_blank">Agrofocal,</a> and a CS Bootcamp 
+        instructor at <a class="link highlight-text" href="https://www.digitalready.org/" target="_blank">Digital Ready.</a> I've completed 
+        a number of personal projects, including this website, entirely homemade in HTML and CSS. 
       </p>
       <a
-      class="abt-text link"
+      class="abt-text link highlight-text"
       href="LukeColomboResume.pdf"
       target="_blank"
       title="Open resume as a PDF"
-      id="resume-link-text"
+      id="resume-link"
       >Click here to view or download my resume as a PDF.</a>
       <p class="abt-text">Outside of school, I play music (piano, drums, and guitar), and read sci-fi and mystery novels. 
-        I also love getting outside and going mountain biking, or playing basketball or volleyball.</p>
+        I also like mountain biking, basketball, and board games.</p>
     </div>
   </section>
-  <!-- EDUCATION -->
-  <div id="ed-container">
-    <section id="education" class="section-margin col">
-      <h2 class="text-align-center title">My Education</h2>
-      <div id="ed-card">
-        <img
-        id="nu-logo"
-        src="images/Northeastern-logo.png"
-        alt="Northeastern University logo"
-        />
-        <div id="education-text" class="col">
-          <p class="edu-text edu-title">B.S. in Computer Science & Cognitive Psychology</p>
-          <p class="edu-text edu-subtitle">Graduating Spring 2025</p>
-          <p class="edu-text">GPA: 3.52/4.0</p>
-          <p class="edu-text">Dean's List 2021, 2022, 2023</p>
-          <p class="edu-text">Relevant Coursework: Natural Language Processing (Python), Database Design (MySQL), 
-            Networks & Distributed Systems (Python), Algorithms & Data (LaTeX), Mathematics of Data Models, Statistics (SPSS)</p>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section-margin">
+      <div class="spacer"></div>
+      <div id="exp-title" class="text-align-center title">
+        <h2>My Experience</h2>
+        <h3>A summary of my relevant work experience.</h3>
+      </div>
+      <div class="expbox col">
+        <div class="expbox-top">
+          <h4 class="exp-company">Agrofocal - San Francisco, CA</h4>
+          <h4 class="exp-date">May 2024 - Present</h4>
         </div>
+        <h5 class="exp-position">Software Intern </h5>
+        <p class="exp-desc">At Agrofocal, I work on an AI-driven crop monitoring system designed to increase efficiency and sustainability 
+          in farms. I evaluate and improve our computer vision models, increasing accuracy via filtering methods. 
+          I also collaborated on end-to-end development of a ground detection model, creating a feed-forward neural net to detect 
+          fallen fruit, eventually optimizing the model to run 50% faster. <a class="link" href=https://agrofocal.ai/ target="_blank">https://agrofocal.ai/</a>
+      </div>
+      <div class="expbox col">
+        <div class="expbox-top">
+          <h4 class="exp-company">Digital Ready - Boston, MA</h4>
+          <h4 class="exp-date">July - December 2023</h4>
+        </div>
+        <h5 class="exp-position">Computer Science Studio Manager </h5>
+        <p class="exp-desc">The Computer Science Bootcamp intends to give students preparation for college-level CS classes, 
+          as well as work experience. I managed a team of Lab Leaders, leading the class with lectures, 
+          curriculum planning, and daily activities exploring Python, OpenCV, UI/UX, and machine learning. 
+          
+          Topics covered included: programming basics, object oriented programming, computer vision, git, machine learning basics. 
       </div>
     </section>
-  </div>
+  <!-- EDUCATION -->
+  <section id="education" class="section-margin col">
+    <h2 class="text-align-center title">My Education</h2>
+    <div id="ed-card">
+      <img
+      id="nu-logo"
+      src="images/Northeastern-logo.png"
+      alt="Northeastern University logo"
+      />
+      <div id="education-text" class="col">
+        <p class="edu-text edu-title">B.S. in Computer Science & Cognitive Psychology</p>
+        <p class="edu-text edu-subtitle">Graduating Spring 2025</p>
+        <p class="edu-text">GPA: 3.7/4.0</p>
+        <p class="edu-text">Dean's List 2022, 2024</p>
+        <p class="edu-text">Relevant Coursework: Software Engineering, Natural Language Processing, Database Design, 
+          Artificial Intelligence, Networks & Distributed Systems, Seminar in Cognitive Neuroscience</p>
+      </div>
+    </div>
+  </section>
+
   <!-- SKILLS -->
   <section id="skills" class="section-margin">
     <div class="spacer"></div>
@@ -99,6 +128,8 @@
       <h2>My Skills</h2>
       <h3>Below are some of my technical skills. I'm always looking to learn more.</h3>
     </div>
+    <!-- To add: bash, typescript, neural networks, reinforcement learning -->
+    <!-- Also: organize -->
     <div id="skills-list" class="row wrap">
       <div class="skill text-align-center">
         <span class="logos java"></span>
@@ -109,20 +140,32 @@
         <h4 class="skill-text">Python</h4>
       </div>
       <div class="skill text-align-center">
-        <span class="logos nlp"></span>
-        <h4 class="skill-text">Natural Language Processing</h4>
+        <span class="logos bash"></span>
+        <h4 class="skill-text">Bash</h4>
+      </div>
+      <div class="skill text-align-center">
+        <span class="logos neural-net"></span>
+        <h4 class="skill-text">Neural Networks</h4>
       </div>
       <div class="skill text-align-center">
         <span class="logos react"></span>
         <h4 class="skill-text">React</h4>
       </div>
       <div class="skill text-align-center">
-        <span class="logos mysql"></span>
-        <h4 class="skill-text">MySQL</h4>
-      </div>
-      <div class="skill text-align-center">
         <span class="logos command-line"></span>
         <h4 class="skill-text">Command Line Scripting</h4>
+      </div>
+      <div class="skill text-align-center">
+        <span class="logos git"></span>
+        <h4 class="skill-text">Git</h4>
+      </div>
+      <div class="skill text-align-center">
+        <span class="logos nlp"></span>
+        <h4 class="skill-text">Natural Language Processing</h4>
+      </div>
+      <div class="skill text-align-center">
+        <span class="logos mysql"></span>
+        <h4 class="skill-text">MySQL</h4>
       </div>
       <div class="skill text-align-center">
         <span class="logos javascript"></span>
@@ -142,7 +185,7 @@
       </div>
       <div class="skill text-align-center">
         <span class="logos opencv"></span>
-        <h4 class="skill-text">OpenCV</h4>
+        <h4 class="skill-text">Computer Vision</h4>
       </div>
       <div class="skill text-align-center">
         <span class="logos spss"></span>
@@ -152,41 +195,14 @@
         <span class="logos latex"></span>
         <h4 class="skill-text">LaTeX</h4>
       </div>
-      <div class="skill text-align-center">
-        <span class="logos git"></span>
-        <h4 class="skill-text">Git</h4>
-      </div>
-      <div class="skill text-align-center">
+      <!-- <div class="skill text-align-center">
         <span class="logos http"></span>
         <h4 class="skill-text">HTTP</h4>
       </div>
-    </div>
-  </section>
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section-margin">
-    <div class="spacer"></div>
-    <div id="exp-title" class="text-align-center title">
-      <h2>My Experience</h2>
-      <h3>A short summary of my work experience.</h3>
-    </div>
-    <div class="expbox col expbox-main">
-      <h4 class="exp-company">Digital Ready - Full Time</h4>
-      <h5 class="exp-position">Computer Science Studio Manager (July - December 2023)</h5>
-      <p class="exp-desc">The Computer Science Bootcamp intends to give students preparation for college-level CS classes, 
-        as well as work experience. I managed a team of Lab Leaders, leading the class with lectures, 
-        curriculum planning, and daily activities exploring Python, OpenCV, UI/UX, and machine learning. 
-    </div>
-    <div class="expbox col">
-      <h4 class="exp-company">Safeway - Part Time</h4>
-      <h5 class="exp-position">Courtesy Clerk (July 2020 - May 2021)</h5>
-      <p class="exp-desc">I helped with bagging groceries, cleaning the store, and communicating between managers and 
-        customers during my senior year of high school.
-    </div>
-    <div class="expbox col">
-      <h4 class="exp-company">Soundwaves - Part Time</h4>
-      <h5 class="exp-position">Piano/Volunteer Tutor (September 2019 - March 2020)</h5>
-      <p class="exp-desc">Before it's shutdown due to Covid-19, I volunteered at Soundwaves, a non-profit focused on supplementing the 
-        underfunded music education at local elementary schools.
+      <div class="skill text-align-center">
+        <span class="logos typescript"></span>
+        <h4 class="skill-text">TypeScript</h4>
+      </div> -->
     </div>
   </section>
   <!-- PROJECTS -->
@@ -198,199 +214,185 @@
       <h3>Some personal and academic projects I've completed.</h3>
     </div>
     <div class="projects-grid row">
-      <div class="project">
-        <div class="p-image-cont">
-          <img src="images/connect4_ss.png" alt="Connect 4 image" class="p-image">
+      <a href="https://github.com/neu-cs4530-fall2024/Team403-project" target="_blank" class="project-link">
+        <div class="project">
+          <div class="p-image-cont">
+            <img src="images/project/spreadsheet-ss.png" alt="Spreadsheet image" class="p-image">
+          </div>
+          <div class="p-text">
+            <h4 class="p-name">Spreadsheet (TypeScript/React)</h4>
+            <p>A web-based spreadsheet application, with conditional formatting, dynamic charts, and LLM 
+              integration for predictive autofill. Includes a comprehensive Jest test suite. 
+            </p>
+          </div>
         </div>
-        <div class="p-text">
-          <h4 class="p-name">Connect 4 (Java)</h4>
-          <p>Outside of class I recreated Connect 4, playable in console and on
-            a GUI created with the Swing library. I used model, view,
-            controlled architecture to allow for different boards, players.
-            Currently adding capabilities to let user play against the
-            computer, using the strategy design pattern.
-          </p>
-          <a
-          href="https://github.com/lukecolombo03/connect-4"
-          target="_blank"
-          class="project-link"
-          ><i class="fa-brands fa-github p-link"></i
-        ></a>
+      </a>
+      <a href="https://github.com/santosjackson/Catan-AI" target="_blank" class="project-link">
+        <div class="project">
+          <div class="p-image-cont">
+            <img src="images/project/catan-ss.png" alt="Catan image" class="p-image">
+          </div>
+          <div class="p-text">
+            <h4 class="p-name">Catan Bot (Python)</h4>
+            <p>An AI agent that uses Q-learning (epsilon greedy strategy) to play a simplified version of 
+              Settlers of Catan. Game simulator and GUI were built by hand.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="project">
-        <div class="p-image-cont">
-          <img src="images/connections-img.png" alt="Connections-maker image" class="p-image">
+      </a>
+      <a href="https://github.com/lukecolombo03/connect-4" target="_blank" class="project-link">
+        <div class="project">
+          <div class="p-image-cont">
+            <img src="images/project/animal_shelter_ss.png" alt="Animal Shelter DB image" class="p-image">
+          </div>
+          <div class="p-text">
+            <h4 class="p-name">Animal Shelter DB (MySQL/Python)</h4>
+            <p>A SQL database in third normal form suitable for an animal shelter. Has a command-line front end built in Python, 
+              with different views for managers, staff, and visitors. 
+            </p>
+          </div>
         </div>
-        <div class="p-text">
-          <h4 class="p-name">Connections Maker (ReactJS)</h4>
-          <p>I'm currently teaching myself React by coding a connections-maker application. 
+      </a>
+      <a href="https://github.com/lukecolombo03/connect-4" target="_blank" class="project-link">
+        <div class="project">
+          <div class="p-image-cont">
+            <img src="images/project/connect4_ss.png" alt="Connect 4 image" class="p-image">
+          </div>
+          <div class="p-text">
+            <h4 class="p-name">Connect 4 (Java)</h4>
+            <p>Outside of class I recreated Connect 4, playable in console and on
+              a GUI created with the Swing library, following MVC architecture. 
+            </p>
+          </div>
+        </div>
+      </a>
+      <!-- <a href="https://github.com/lukecolombo03/connect-4" target="_blank" class="project-link">
+        <div class="project">
+          <div class="p-image-cont">
+            <img src="images/project/connections-img.png" alt="Connections-maker image" class="p-image">
+          </div>
+          <div class="p-text">
+            <h4 class="p-name">Connections Maker (ReactJS)</h4>
+            <p>I'm currently teaching myself React by coding a connections-maker application. 
             Inspired by the New York Times Connections game, I wanted a way to make my own puzzles and
             send them to my friends, and thought it would be a great opportunity to hone my web development skills.
-          </p>
-          <a
-          href="https://github.com/lukecolombo03/connections-maker"
-          target="_blank"
-          class="project-link"  
-          ><i class="fa-brands fa-github p-link"></i
-        ></a>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="project">
-        <div class="p-image-cont">
-          <img src="images/raft-img.png" alt="Connect 4 image" class="p-image">
+      </a> -->
+      <a href="https://github.com/lukecolombo03/connect-4" target="_blank" class="project-link">
+        <div class="project">
+          <div class="p-image-cont">
+            <img src="images/project/raft-img.png" alt="RAFT image" class="p-image">
+          </div>
+          <div class="p-text">
+            <h4 class="p-name">RAFT Implementation (Python)</h4>
+            <p>An implementation of the RAFT algorithm for consensus and 
+            fault tolerance. Runs in a simulated distributed database, 
+            and balances query latency, consistency, and packet overhead.
+            </p>
+          </div>
         </div>
-        <div class="p-text">
-          <h4 class="p-name">RAFT Implementation (Python)</h4>
-          <p>For my CS3700 final, we implemented the RAFT algorithm for consensus and 
-            fault tolerance in a simulated distributed database with TCP/IP sockets. 
-            We had keep in mind query latency, consistency, and packet overhead, with
-            simulations for various unreliable networks. 
-          </p>
-          <a
-          href="https://github.com/lukecolombo03/RAFT"
-          target="_blank"
-          class="project-link"
-          ><i class="fa-brands fa-github p-link"></i
-        ></a>
-        </div>
-      </div>
-      <div class="project">
-        <div class="p-image-cont">
-          <img src="images/snake_ss.png" alt="Connect 4 image" class="p-image">
-        </div>
-        <div class="p-text">
-          <h4 class="p-name">Snake (Racket)</h4>
-          <p>My first personal project, made during my first ever CS class, was
+      </a>
+      <a href="https://github.com/lukecolombo03/connect-4" target="_blank" class="project-link">
+        <div class="project">
+          <div class="p-image-cont">
+            <img src="images/project/snake_ss.png" alt="Snake image" class="p-image">
+          </div>
+          <div class="p-text">
+            <h4 class="p-name">Snake (Racket)</h4>
+            <p>My first personal project was
             recreating Snake. I used a lot of the principles and design
             patterns we were learning (recursion, linked lists, abstraction)
             and had a lot of fun experimenting with coding on my own.
-          </p>
-          <a
-          href="https://github.com/lukecolombo03/snake"
-          target="_blank"
-          class="project-link"
-          ><i class="fa-brands fa-github p-link"></i
-        ></a>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="project">
-        <div class="p-image-cont">
-          <img src="images/image-processor-img.png" alt="Image processer app image" class="p-image" />
+      </a>
+      <a href="https://github.com/lukecolombo03/connect-4" target="_blank" class="project-link">
+        <div class="project">
+          <div class="p-image-cont">
+            <img src="images/project/image-processor-img.png" alt="Image processer app image" class="p-image" />
+          </div>
+          <div class="p-text">
+            <h4 class="p-name">Image Processor (Java)</h4>
+            <p>An image processing application with a GUI created in Java. You can load images in, edit them with buttons like brighten,
+            greyscale, blur, or mosaic, and then save them to your local device. 
+            </p>
+          </div>
         </div>
-        <div class="p-text">
-          <h4 class="p-name">Image Processor (Java)</h4>
-          <p>My final for CS3500, this image processing application has a GUI created with the
-            Java Swing library. You can load images in, edit them with buttons like brighten,
-            greyscale, blur, and mosaic, and then save them to your local device. 
-          </p>
-          <a
-          href="https://github.com/lukecolombo03/image-processor"
-          target="_blank"
-          class="project-link"
-          ><i class="fa-brands fa-github p-link"></i
-        ></a>
+      </a>
+      <a href="https://github.com/lukecolombo03/connect-4" target="_blank" class="project-link">
+        <div class="project">
+          <div class="p-image-cont">
+            <img src="images/project/cat-img.png" alt="Rat-a-tat-cat image" class="p-image" />
+          </div>
+          <div class="p-text">
+            <h4 class="p-name">Rat-a-tat-cat (Python)</h4>
+            <p>This was my family's go-to card game as a kid, and I made this version 
+            to sharpen my Python skills. It's playable on the command line with 
+            a colored text display, and has rudimentary AIs to play against.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="project">
-        <div class="p-image-cont">
-          <img src="images/cat-img.png" alt="Rat-a-tat-cat image" class="p-image" />
+      </a>
+      <a href="https://github.com/lukecolombo03/connect-4" target="_blank" class="project-link">
+        <div class="project">
+          <div class="p-image-cont">
+            <img src="images/project/tcp_ss.png" alt="TCP image" class="p-image" />
+          </div>
+          <div class="p-text">
+            <h4 class="p-name">BGP Router (Python)</h4>
+            <p>An implementation of a Border Gateway Protocol router. Ran inside a 
+            simulator, it forwards packets, manages a routing table, performs
+            bitwise manipulation on IP addresses, and was a major pain to debug.
+            </p>
+          </div>
         </div>
-        <div class="p-text">      
-          <h4 class="p-name">Rat-a-tat-cat (Python)</h4>
-          <p>This was my family's go-to card game as a kid, and I recreated it in Python 
-            in order to sharpen my coding skills. It's playable on the command line with 
-            a colored text display, and has rudimentary AIs to play against. It was also a 
-            fun exercise in choosing what information should be available/hidden
-            to the user.
-          </p>
-          <a
-          href="https://github.com/lukecolombo03/cat"
-          target="_blank"
-          class="project-link"
-          ><i class="fa-brands fa-github p-link"></i
-        ></a>
+      </a>
+      <a href="https://github.com/lukecolombo03/connect-4" target="_blank" class="project-link">
+        <div class="project">
+          <div class="p-image-cont">
+            <img src="images/project/web-crawler-img.png" alt="Web crawler image" class="p-image" />
+          </div>
+          <div class="p-text">
+            <h4 class="p-name">Web Crawler (Python)</h4>
+            <p>A web crawler/spider that traverses through the CS3700 class
+            website. I learned a lot about parsing HTML, as well as HTTP 
+            methods like GET and POST.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="project">
-        <div class="p-image-cont">
-          <img src="images/tcp_ss.png" alt="TCP image" class="p-image" />
+      </a>
+      <a href="https://github.com/lukecolombo03/connect-4" target="_blank" class="project-link">
+        <div class="project">
+          <div class="p-image-cont">
+            <img src="images/project/ngram-img2.png" alt="Ngram model image" class="p-image" />
+          </div>
+          <div class="p-text">
+            <h4 class="p-name">N-Gram Language Model (Python)</h4>
+            <p>This LM tokenizes language into uses n-length sequences of words. It uses probability 
+              calculations and the Shannon method to generate text, and has perplexity as an evaluation metric.
+            </p>
+          </div>
         </div>
-        <div class="p-text">
-          <h4 class="p-name">BGP Router (Python)</h4>
-          <p>
-            This is an implementation of a Border Gateway Protocol router. Ran inside a 
-            simulator, it forwards packets, manages and updates a routing table, performs
-            bitwise manipulation on IP addresses, and was a major pain to debug. This taught
-            me so much about networking protocols and socket programming.
-          </p>
-          <a
-          href="https://github.com/lukecolombo03/BGP-router"
-          target="_blank"
-          class="project-link"
-          ><i class="fa-brands fa-github p-link"></i
-        ></a>
+      </a>
+      <a href="https://github.com/lukecolombo03/connect-4" target="_blank" class="project-link">
+        <div class="project">
+          <div class="p-image-cont">
+            <img src="images/project/react-img.png" alt="Bracket-maker image" class="p-image">
+          </div>
+          <div class="p-text">
+            <h4 class="p-name">Bracket Maker (ReactJS)</h4>
+            <p>I'm currently teaching myself React by coding a bracket-maker application that lets users enter in a number 
+              of competitors, then vote on the winner of each matchup, March Madness style.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="project">
-        <div class="p-image-cont">
-          <img src="images/web-crawler-img.png" alt="Web crawler image" class="p-image" />
-        </div>
-        <div class="p-text">
-          <h4 class="p-name">Web Crawler (Python)</h4>
-          <p>This is a web crawler/spider that traverses through the CS3700 class
-            website. I learned a lot about parsing HTML, as well as the various HTTP 
-            methods like GET and POST and how they play into the larger internet model.
-          </p>
-          <a
-          href="https://github.com/lukecolombo03/WebCrawler"
-          target="_blank"
-          class="project-link"
-          ><i class="fa-brands fa-github p-link"></i
-        ></a>
-        </div>
-      </div>
-      <div class="project">
-        <div class="p-image-cont">
-          <img src="images/react-img.png" alt="Bracket-maker image" class="p-image">
-        </div>
-        <div class="p-text">
-          <h4 class="p-name">Bracket Maker (ReactJS)</h4>
-          <p>I'm currently teaching myself React by coding a bracket-maker application. 
-            My friends and I sometimes make brackets of our favorite songs, movies, etc. 
-            on paper, and translating that activity to code has taught me a lot about 
-            front-end development and Javascript.
-          </p>
-          <a
-          href="https://github.com/lukecolombo03/bracket-maker"
-          target="_blank"
-          class="project-link"
-          ><i class="fa-brands fa-github p-link"></i
-        ></a>
-        </div>
-      </div>
-      <div class="project">
-        <div class="p-image-cont">
-          <img src="images/ngram-img2.png" alt="Ngram model image" class="p-image" />
-        </div>
-        <div class="p-text">
-          <h4 class="p-name">N-Gram Language Model (Python)</h4>
-          <p>N-Gram language models use n-length sequences of words, along with a ton of 
-            probability calculations in order to generate text. This model is first trained
-            on a dataset, then generates sentences using the Shannon method. It also has a 
-            method for calculating perplexity, an evaulation metric.
-          </p>
-          <a
-          href="https://github.com/lukecolombo03/Ngram"
-          target="_blank"
-          class="project-link"
-          ><i class="fa-brands fa-github p-link"></i
-        ></a>
-        </div>
-      </div>
+      </a>
     </div>
   </section>
-  <!-- CONTACT -->
+  <!-- CONTACT
   <section id="contact" class="section-margin col">
     <div class="spacer"></div>
     <div id="contact-title" class="text-align-center title">
@@ -442,11 +444,11 @@
         </form>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- FOOTER -->
   <section id="footer">
     <div id="footer-container" class="row">
-      <p id="copyright" class="footer-elem text-align-center">© 2024 <code>&#8212;</code> Luke Colombo </p>
+      <!-- <p id="copyright" class="footer-elem text-align-center">© 2024 <code>&#8212;</code> Luke Colombo </p> -->
       <div id="icons-list" class="row footer-elem">
         <!-- mail icon -->
         <div class="socials-card" id="email-card">
@@ -459,10 +461,8 @@
         </div>
         <!-- github icon -->
         <div class="socials-card">
-          <a
-            href="https://github.com/lukecolombo03"
-            target="_blank"
-          >
+          <a href="https://github.com/lukecolombo03"
+            target="_blank">
             <i class="fa-brands fa-github link footer-icon" style="font-size: 3.5rem"> </i>
           </a>
           <div>
@@ -471,10 +471,8 @@
         </div>
         <!-- linkedin icon -->
         <div class="socials-card">
-          <a
-            href="https://www.linkedin.com/in/lukecolombo/"
-            target="_blank"
-          >
+          <a href="https://www.linkedin.com/in/lukecolombo/"
+            target="_blank" >
             <i class="fa-brands fa-linkedin link footer-icon" style="font-size: 3.5rem"></i
           ></a>
           <div class="s textbox">
@@ -482,13 +480,13 @@
           </div>
         </div>
       </div>
-      <div id="footer-links" class="col footer-elem">
+      <!-- <div id="footer-links" class="col footer-elem">
         <span style="text-decoration: underline; font-weight: bold; font-size: 15px;">General</span>
         <a href="#" class="footer-link">About Me</a>
         <a href="#projects" class="footer-link">Projects</a>
         <a href="#experience" class="footer-link">Experience</a>
         <a href="#education" class="footer-link">Education</a>
-      </div>
+      </div> -->
     </div>
     <button onclick="topFunction()" id="to-top-button" title="Go to top">
       <i class="fa-solid fa-chevron-up fa-xl"></i>

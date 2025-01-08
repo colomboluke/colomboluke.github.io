@@ -1,14 +1,16 @@
 :root {
     --text: rgb(5, 3, 21);
-    --background: rgb(232, 226, 223);
+    --background: rgb(243, 239, 236);
     --primary: rgb(78, 73, 178);
     --secondary: rgb(190, 173, 196);
     --accent: rgb(94, 114, 170);
+    /* background color of my PFP - could use */
+    --test: rgb(124, 85, 62);
 }
 
 body {
     -webkit-text-size-adjust: 100%;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Verdana', 'Lato', sans-serif;
     margin: 0%;
     padding: 0%;
     font-size: 90%;
@@ -666,10 +668,20 @@ body {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* NORMAL FORMATTING */
 @media screen and (min-width: 600px) {
-
-
 
     h1 {
         font-size: 44px;
@@ -733,7 +745,12 @@ body {
     }
 
     .link {
-        color: var(--secondary);
+        text-decoration: none;
+        color: var(--primary);
+    }
+
+    .link:hover {
+        text-decoration: underline;
     }
 
     .spacer {
@@ -790,10 +807,11 @@ body {
 
     #about {
         justify-content: center;
-        width: 75%;
+        width: 55%;
         height: min-content;
         margin: auto;
         margin-top: 70px;
+        margin-bottom: 70px;
         font-size: 1.1rem;
         /* background-color: var(--primary); */
     }
@@ -806,20 +824,26 @@ body {
         border: 5px solid grey;
     }
 
-    #about-text {
+    #about-text-cont {
         margin-left: 30px;
         font-size: 16px;
     }
 
-    #resume-link-text {
+    #resume-link {
         width: auto;
         font-weight: bold;
-        text-decoration: none;
-        color: var(--accent);
     }
 
-    #resume-link-text:hover {
-        text-decoration: underline;
+    #resume-link {
+        font-size: 16px
+    }
+
+    /* Do something fun when it pops up */
+    #resume-link:hover {
+        transform: scale(1.1);
+        transform: translateY(-2px);
+        /* text-decoration: none; */
+        /* color: rgb(5, 3, 21); */
     }
 
     .spacer-1 {
@@ -845,30 +869,80 @@ body {
         color: var(--primary);
     }
 
+    /* Makes it pop up and turn a different color */
     .under-photo-icon:hover {
         font-size: 1rem;
         color: rgb(5, 3, 21);
     }
 
-    /* ---EDUCATION--- */
+    /* ---EXPERIENCE--- */
 
-    #ed-container {
-        width: 100%;
-        /* background-color: var(--primary); */
-        padding-top: 10px;
-        padding-bottom: 50px;
+    #experience {
+        width: 55%;
+        margin: auto;
+        margin-bottom: 150px;
+        /* border: 2px solid blue; */
     }
+
+    .expbox {
+        width: 75%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 2%;
+        gap: 10px;
+        border: 3px solid black;
+        box-shadow: 4px 4px grey;
+    }
+
+    .expbox-top {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    .exp-company {
+        font-size: 19px;
+        /* background-color: lightblue; */
+        font-weight: bold;
+    }
+
+    .exp-date {
+        font-size: 19px;
+        font-weight: normal;
+    }
+
+    .exp-position {
+        /* background-color: pink; */
+        font-weight: normal;
+        font-style: italic;
+        font-size: 17px;
+    }
+
+    .exp-desc {
+        width: 95%;
+        height: 100%;
+        text-align: left;
+        margin-left: 10px;
+        font-size: 16px;
+        /* background-color: lightgreen; */
+    }
+
+
+    /* ---EDUCATION--- */
 
     #education {
         margin: auto;
         width: 48%;
-        margin-top: 50px;
+        margin-bottom: 70px;
     }
 
     #ed-card {
         display: flex;
         flex-direction: row-reverse;
-        /* border: 2px solid blue; */
+        border: 3px solid black;
+        box-shadow: 5px 5px grey;
+        padding: 3%;
         text-align: left;
     }
 
@@ -895,14 +969,15 @@ body {
     #nu-logo {
         height: 10rem;
         margin-left: 25px;
+        margin-right: 5px;
     }
 
     /* ---SKILLS--- */
 
     #skills {
         margin: auto;
-        margin-top: 70px;
-        width: 75%;
+        width: 55%;
+        margin-bottom: 70px;
     }
 
     #skills-spacer {
@@ -943,6 +1018,8 @@ body {
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
+
+    /* NOTE: I totally forgot which website I copied the java - nlp logos from, so that's why they have a different format. */
 
     .java {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 346'%3E%3Cpath fill='%235382A1' d='M82.554 267.473s-13.198 7.675 9.393 10.272c27.369 3.122 41.356 2.675 71.517-3.034c0 0 7.93 4.972 19.003 9.279c-67.611 28.977-153.019-1.679-99.913-16.517m-8.262-37.814s-14.803 10.958 7.805 13.296c29.236 3.016 52.324 3.263 92.276-4.43c0 0 5.526 5.602 14.215 8.666c-81.747 23.904-172.798 1.885-114.296-17.532'/%3E%3Cpath fill='%23E76F00' d='M143.942 165.515c16.66 19.18-4.377 36.44-4.377 36.44s42.301-21.837 22.874-49.183c-18.144-25.5-32.059-38.172 43.268-81.858c0 0-118.238 29.53-61.765 94.6'/%3E%3Cpath fill='%235382A1' d='M233.364 295.442s9.767 8.047-10.757 14.273c-39.026 11.823-162.432 15.393-196.714.471c-12.323-5.36 10.787-12.8 18.056-14.362c7.581-1.644 11.914-1.337 11.914-1.337c-13.705-9.655-88.583 18.957-38.034 27.15c137.853 22.356 251.292-10.066 215.535-26.195M88.9 190.48s-62.771 14.91-22.228 20.323c17.118 2.292 51.243 1.774 83.03-.89c25.978-2.19 52.063-6.85 52.063-6.85s-9.16 3.923-15.787 8.448c-63.744 16.765-186.886 8.966-151.435-8.183c29.981-14.492 54.358-12.848 54.358-12.848m112.605 62.942c64.8-33.672 34.839-66.03 13.927-61.67c-5.126 1.066-7.411 1.99-7.411 1.99s1.903-2.98 5.537-4.27c41.37-14.545 73.187 42.897-13.355 65.647c0 .001 1.003-.895 1.302-1.697'/%3E%3Cpath fill='%23E76F00' d='M162.439.371s35.887 35.9-34.037 91.101c-56.071 44.282-12.786 69.53-.023 98.377c-32.73-29.53-56.75-55.526-40.635-79.72C111.395 74.612 176.918 57.393 162.439.37'/%3E%3Cpath fill='%235382A1' d='M95.268 344.665c62.199 3.982 157.712-2.209 159.974-31.64c0 0-4.348 11.158-51.404 20.018c-53.088 9.99-118.564 8.824-157.399 2.421c.001 0 7.95 6.58 48.83 9.201'/%3E%3C/svg%3E");
@@ -1041,56 +1118,27 @@ body {
         mask-size: 100% 100%;
     }
 
-    /* ---EXPERIENCE--- */
-
-    #experience {
-        width: 80%;
-        margin: auto;
-        margin-top: 80px;
+    .bash {
+        background-image: url("/images/svg/bash-2.svg");
     }
 
-    .expbox {
-        width: 45%;
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        padding: 1%;
-        gap: 10px;
-        border: 3px solid black;
+    .neural-net {
+        background-image: url("/images/svg/reshot-icon-artificial-neural-network-A4Z7V6TEUS.svg");
     }
 
-    .expbox-main {
-        width: 55%;
+    /* This one has padding and it really annoys me so I removed it temporarily */
+    .typescript {
+        background-image: url("/images/svg/icons8-typescript.svg");
     }
 
-    .exp-company {
-        font-size: 19px;
-        /* background-color: lightblue; */
-        font-weight: bold;
-    }
 
-    .exp-position {
-        /* background-color: pink; */
-        font-weight: normal;
-        font-style: italic;
-        font-size: 17px;
-    }
-
-    .exp-desc {
-        width: 95%;
-        height: 100%;
-        text-align: left;
-        margin-left: 10px;
-        font-size: 16px;
-        /* background-color: lightgreen; */
-    }
 
     /* ---PROJECTS--- */
 
     #projects {
-        width: 92%;
+        width: 65%;
         margin: auto;
-        margin-top: 70px;
+        margin-bottom: 60px;
         /* border: 4px solid pink; */
     }
 
@@ -1100,15 +1148,25 @@ body {
         justify-content: center;
     }
 
-    .project {
-        margin: 25px;
-        border: 2px solid black;
-
+    .project-link {
         width: 45%;
-        height: 310px;
+        height: 240px;
+        margin: 18px;
+        /* border: 3px solid purple; */
+        text-decoration: none;
+    }
 
+    .project {
+        border: 3px solid black;
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-flow: row nowrap;
+        transition: .1s;
+    }
+
+    .project:hover {
+        transform: scale(1.05);
     }
 
     .p-text {
@@ -1121,13 +1179,13 @@ body {
         font-size: 15px;
 
         /* border: 2px solid red; */
-        margin: 10px;
-        margin-left: 15px;
-        margin-bottom: 0px;
+        margin: 0 10px 0 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 
     .p-name {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-size: 15px;
     }
 
@@ -1145,14 +1203,14 @@ body {
         object-fit: cover;
     }
 
-    .p-link {
+    /* .p-link {
         font-size: 45px;
         margin-top: 15px;
         margin-bottom: 5px;
         margin-left: 0px;
 
         color: var(--primary);
-    }
+    } */
 
     .p-link:hover {
         /* font-size: 55px; */
@@ -1164,7 +1222,7 @@ body {
     #contact {
         margin: auto;
         width: 80%;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     #above-form {
@@ -1287,23 +1345,16 @@ body {
         /* border: 1px solid green; */
     }
 
-    #footer-links {
-        align-items: flex-start;
-        width: auto;
-        margin-left: 50px;
-        /* border: 1px solid green; */
-    }
-
-    .footer-link {
-        text-decoration: none;
-        font-size: 15px;
-        color: var(--primary);
-    }
-
     .footer-icon {
         margin-bottom: 10px;
         margin-top: 0px;
         color: var(--primary);
+        transition: .1s;
+    }
+
+    .footer-icon:hover {
+        text-decoration: none;
+        transform: scale(1.15);
     }
 
     #to-top-button {
