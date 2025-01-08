@@ -81,7 +81,12 @@ body {
     }
 
     .link {
-        color: var(--secondary);
+        text-decoration: none;
+        color: var(--primary);
+    }
+
+    .link:hover {
+        text-decoration: underline;
     }
 
     .spacer {
@@ -94,13 +99,15 @@ body {
     #header {
         height: 100px;
         width: 100%;
-        margin-top: 2px;
+        /* margin-top: 2px; */
 
         position: sticky;
         top: 0px;
+        padding-top: 10px;
         z-index: 100;
 
         flex-wrap: nowrap;
+        justify-content: space-around;
         align-items: center;
 
         background-color: var(--text);
@@ -108,7 +115,13 @@ body {
     }
 
     #header-words {
-        row-gap: 15px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        /* row-gap: 5px; */
+        height: 100%;
+        margin-left: 30px;
     }
 
     #header-name {
@@ -456,7 +469,7 @@ body {
     }
 
     .project {
-        margin: 25px;
+        /* margin: 25px; */
         border: 2px solid black;
 
         width: 100%;
@@ -495,6 +508,7 @@ body {
     .p-image {
         width: 100%;
         height: 100%;
+        max-height: 260px;
         object-fit: cover;
         position: relative;
         align-self: center;
@@ -512,90 +526,13 @@ body {
         color: var(--text);
     }
 
-    /* ---CONTACT--- */
-
-    #contact {
-        margin: auto;
-        width: 80%;
-        margin-top: 20px;
-    }
-
-    #above-form {
-        font-weight: normal;
-        font-size: 18px;
-        margin-top: 15px;
-    }
-
-    #contact-content {
-        display: flex;
-        flex-flow: row nowrap;
-    }
-
-    .contact-link {
-        color: var(--accent);
-    }
-
-    #email-form-container {
-        width: 100%;
-        height: auto;
-        margin: auto;
-        /* border: 2px solid blue; */
-    }
-
-    #email-form {
-        /* border: 2px solid red; */
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-        gap: 30px;
-    }
-
-    #eform-top-row {
-        gap: 30px;
-    }
-
-    #form-inputs {
-        gap: 25px;
-    }
-
-    .form-text {
-        font-family: 'Source Sans Pro', 'Roboto Slab', Verdana;
-        font-size: 14px;
-        font-weight: 600;
-        padding: 20px;
-        border-radius: 6px;
-    }
-
-    .form-input {
-        width: 85%;
-        height: 20px;
-
-        /* background-color: lightblue; */
-    }
-
-    #form-text-area {
-        width: 85%;
-        /* background-color: pink; */
-    }
-
-    #submit-btn {
-        width: 40%;
-        height: 15%;
-        font-size: 18px;
-        font-family: 'Source Sans Pro', 'Roboto Slab', Verdana;
-        font-weight: bold;
-        border-radius: 10px;
-        background-color: var(--primary);
-        color: rgb(251, 251, 254);
-        margin-bottom: 15px;
-    }
-
     /* ---FOOTER--- */
 
     #footer {
         width: auto;
         margin-top: 0px;
         margin: 0%;
+        padding: 2%;
 
         background-color: lightgrey;
     }
@@ -611,12 +548,6 @@ body {
         margin: auto;
     }
 
-    #copyright {
-        padding: 0%;
-        width: auto;
-        display: none;
-    }
-
     #icons-list {
         width: 100%;
         height: auto;
@@ -624,10 +555,10 @@ body {
         align-items: center;
         justify-content: center;
         gap: 2%;
-
     }
 
-    #email-card {
+    /* Text overlaps too much on mobile */
+    .card-text {
         display: none;
     }
 
@@ -1319,11 +1250,6 @@ body {
 
         /* border: 2px solid gold; */
         margin: auto;
-    }
-
-    #copyright {
-        padding: 0%;
-        width: auto;
     }
 
     #icons-list {
