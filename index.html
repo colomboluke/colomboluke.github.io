@@ -16,6 +16,7 @@
 </head>
 <body>
   <!-- HEADER -->
+  <div id="background-layer">
   <section id="header" class="row">
     <a href="#" id="header-name" class="header-link">Luke Colombo</a> 
     <div id="header-words">
@@ -32,7 +33,6 @@
   <!-- ABOUT -->
   <section id="about" class="row">
     <div id="about-photo" class="col">
-      <!-- TODO: add border to photo -->
       <img src="images/CroppedPFP.jpg" alt="Picture of me" id="pfp">
       <div id="under-photo-icons">
         <a
@@ -47,17 +47,32 @@
         </a>
       </div>
     </div>
+    <!-- TODO: add Boston, MA with a little icon to the left -->
     <div id="about-text-cont" class="col">
       <h1 class="abt-text">Luke Colombo</h1>
-      <h3 id="subtitle" class="abt-text">Computer Science & Psychology Student</h3>
+      <div id="subtitle-cont">
+        <h3 id="subtitle" class="abt-text">Computer Science & Psychology Student</h3>
+        <h3 id="location" class="abt-text"><i class="fa-solid fa-location-dot" id="location-icon"></i>Boston, MA</h3>
+      </div>
       <div class="spacer-1"></div>
       <p class="abt-text">
-        I'm a fourth-year <a class="link highlight-text" href="https://www.northeastern.edu/" target="_blank">Northeastern University</a> 
-        student from San Francisco, California. I have a combined major in 
-        computer science and psychology, with interests in cognitive science, software engineering, and web development. I've worked 
-        as a software engineer at <a class="link highlight-text" href="https://agrofocal.ai/" target="_blank">Agrofocal,</a> and a CS Bootcamp 
-        instructor at <a class="link highlight-text" href="https://www.digitalready.org/" target="_blank">Digital Ready.</a> I've completed 
-        a number of personal projects, including this website, entirely homemade in HTML and CSS. 
+        I’m a senior at Northeastern University, studying computer science and cognitive psychology. 
+        I recently interned as a software engineer at 
+        <a href="https://agrofocal.ai/" target="_blank" class="link highlight-text">Agrofocal,</a> 
+        helping develop their crop monitoring software. I worked with our data pipeline to train, 
+        evaluate, and fine-tune our AI models, and constructed a ground detection system from scratch. 
+      </p>
+      <p class="abt-text">Previously, I co-managed 
+        <a href="https://www.digitalready.org/" target="_blank" class="link highlight-text">Digital Ready’s</a> 
+        Computer Science Bootcamp, designing and delivering curriculum to teach programming to high school 
+        students. I’ve also mentored elementary schoolers in music through the Soundwaves program.
+      </p>
+      <p class="abt-text">
+        At Northeastern, I’ve built a <a href="#projects" class="link highlight-text">Catan bot,</a> 
+        a SQL <a href="#projects" class="link highlight-text">database and frontend,</a> and socket-based 
+        <a href="#projects" class="link highlight-text">networking systems.</a> I’ve also conducted experimental 
+        psychology research, and authored a paper on adolescent social exclusion and proposed a subsequent fMRI 
+        study. Personal projects include this website, entirely homemade in HTML/CSS. 
       </p>
       <a
       class="abt-text link highlight-text"
@@ -66,8 +81,14 @@
       title="Open resume as a PDF"
       id="resume-link"
       >Click here to view or download my resume as a PDF.</a>
-      <p class="abt-text">Outside of school, I play music (piano, drums, and guitar), and read sci-fi and mystery novels. 
-        I also like mountain biking, basketball, and board games.</p>
+      <p class="abt-text">
+        Outside of classes, I play music, read sci-fi, and enjoy board games and sports like mountain biking, 
+        basketball, and volleyball. I also play intramural soccer and write for 
+        <a href="https://www.tastemakersmag.com/" target="_blank" class="link highlight-text">Tastemakers</a> magazine. 
+        I’m passionate about bridging people and technology and seek an exciting, collaborative role. I’m eager 
+        to apply my skills to fields like cognitive science, healthcare, or environmental science to make a 
+        positive impact on society.
+      </p>
     </div>
   </section>
     <!-- EXPERIENCE -->
@@ -75,7 +96,7 @@
       <div class="spacer"></div>
       <div id="exp-title" class="text-align-center title">
         <h2>My Experience</h2>
-        <h3>A summary of my relevant work experience.</h3>
+        <h3>A short summary of my relevant work experience.</h3>
       </div>
       <!-- TODO: give the experience boxes different color schemes based on the company? -->
       <div class="expbox col">
@@ -87,7 +108,8 @@
         <p class="exp-desc">At Agrofocal, I work on an AI-driven crop monitoring system designed to increase efficiency and sustainability 
           in farms. I evaluate and improve our computer vision models, increasing accuracy via filtering methods. 
           I also collaborated on end-to-end development of a ground detection model, creating a feed-forward neural net to detect 
-          fallen fruit, eventually optimizing the model to run 50% faster. <a class="link" href=https://agrofocal.ai/ target="_blank">https://agrofocal.ai/</a>
+          fallen fruit, including post-processing and system integration. I eventually optimized the model to run 50% faster while 
+          maintaining accuracy. <a class="link" href=https://agrofocal.ai/ target="_blank">https://agrofocal.ai/</a>
       </div>
       <div class="expbox col">
         <div class="expbox-top">
@@ -96,10 +118,9 @@
         </div>
         <h5 class="exp-position">Computer Science Studio Manager </h5>
         <p class="exp-desc">The Computer Science Bootcamp intends to give students preparation for college-level CS classes, 
-          as well as work experience. I managed a team of Lab Leaders, leading the class with lectures, 
-          curriculum planning, and daily activities exploring Python, OpenCV, UI/UX, and machine learning. 
-          
-          Topics covered included: programming basics, object oriented programming, computer vision, git, machine learning basics. 
+          as well as work experience. I managed a team of Lab Leaders, planning the curriculum, delivering lectures, and organizing 
+          activities like worksheets or day-long hackathons. We explored Python, OpenCV, UI/UX, and machine learning, and left our students 
+          with fundamental experience in partner programming, Git, and resume building.
       </div>
     </section>
   <!-- EDUCATION -->
@@ -108,16 +129,16 @@
     <div id="ed-card">
       <img
       id="nu-logo"
-      src="images/Northeastern-logo.png"
+      src="images/NU-logo-red.png"
       alt="Northeastern University logo"
       />
       <div id="education-text" class="col">
         <p class="edu-text edu-title">B.S. in Computer Science & Cognitive Psychology</p>
         <p class="edu-text edu-subtitle">Graduating Spring 2025</p>
         <p class="edu-text">GPA: 3.7/4.0</p>
-        <p class="edu-text">Dean's List 2022, 2024</p>
-        <p class="edu-text">Relevant Coursework: Software Engineering, Natural Language Processing, Database Design, 
-          Artificial Intelligence, Networks & Distributed Systems, Seminar in Cognitive Neuroscience</p>
+        <p class="edu-text">Dean's List 2022 - 2024</p>
+        <p class="edu-text">Relevant Coursework: Software Engineering, Human-Computer Interaction, Natural Language Processing, 
+          Database Design, Networks & Distributed Systems, Seminar in Cognitive Neuroscience</p>
       </div>
     </div>
   </section>
@@ -495,6 +516,7 @@
       <i class="fa-solid fa-chevron-up fa-xl"></i>
     </button>
   </section>
+</div>
   <script src="functions.js"></script>
 </body>
 </html>
