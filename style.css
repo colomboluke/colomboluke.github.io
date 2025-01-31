@@ -839,17 +839,19 @@ body {
         margin-top: 50px;
         margin-bottom: 50px;
         padding: 2%;
-        gap: 10px;
+        gap: 0px;
         border: 3px solid black;
         box-shadow: 4px 4px grey;
         /* If I wanted to add background colors */
         /* background-color: rgb(210, 216, 255); */
     }
 
-    .expbox-top {
+    .expbox-title {
         display: flex;
         flex-flow: row;
         justify-content: space-between;
+        /* border: 2px solid red; */
+        margin-bottom: 5px;
     }
 
     .exp-company {
@@ -860,7 +862,21 @@ body {
 
     .exp-date {
         font-size: 19px;
+        font-weight: bold;
+    }
+
+    .expbox-subtitle {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        /* border: 2px solid blue; */
+        margin-bottom: 10px;
+    }
+
+    .exp-location {
         font-weight: normal;
+        font-style: italic;
+        font-size: 19px;
     }
 
     .exp-position {
