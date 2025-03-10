@@ -98,7 +98,7 @@ body {
     /* ---HEADER--- */
 
     #header {
-        height: 100px;
+        height: 70px;
         width: 100%;
         /* margin-top: 2px; */
 
@@ -217,6 +217,71 @@ body {
         color: rgb(5, 3, 21);
     }
 
+    /* ---EXPERIENCE--- */
+
+    #experience {
+        width: 80%;
+        margin: auto;
+    }
+
+    .expbox {
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 1%;
+        border: 3px solid black;
+    }
+
+    .expbox-main {
+        width: 90%;
+    }
+
+    .expbox-title {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 5px;
+    }
+
+    .exp-company {
+        font-size: 19px;
+    }
+
+    .exp-date {
+        font-size: 17px;
+        font-style: italic;
+        font-weight: normal;
+    }
+
+    .expbox-subtitle {
+        display: flex;
+        flex-flow: column;
+        /* border: 2px solid blue; */
+        margin-bottom: 10px;
+    }
+
+    .exp-position {
+        font-size: 19px;
+        /* background-color: lightblue; */
+        font-weight: bold;
+    }
+
+    .exp-location {
+        font-weight: normal;
+        font-style: italic;
+        font-size: 17px;
+    }
+
+    .exp-desc {
+        width: 95%;
+        height: 100%;
+        text-align: left;
+        margin-left: 10px;
+        font-size: 16px;
+        /* background-color: lightgreen; */
+    }
+
+
     /* ---EDUCATION--- */
 
     #ed-container {
@@ -270,7 +335,6 @@ body {
 
     #skills {
         margin: auto;
-        margin-top: 70px;
         width: 90%;
     }
 
@@ -410,48 +474,12 @@ body {
         mask-size: 100% 100%;
     }
 
-    /* ---EXPERIENCE--- */
-
-    #experience {
-        width: 80%;
-        margin: auto;
-        margin-top: 80px;
+    .bash {
+        background-image: url("/images/svg/bash-2.svg");
     }
 
-    .expbox {
-        width: 80%;
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        padding: 1%;
-        gap: 10px;
-        border: 3px solid black;
-    }
-
-    .expbox-main {
-        width: 90%;
-    }
-
-    .exp-company {
-        font-size: 19px;
-        /* background-color: lightblue; */
-        font-weight: bold;
-    }
-
-    .exp-position {
-        /* background-color: pink; */
-        font-weight: normal;
-        font-style: italic;
-        font-size: 17px;
-    }
-
-    .exp-desc {
-        width: 95%;
-        height: 100%;
-        text-align: left;
-        margin-left: 10px;
-        font-size: 16px;
-        /* background-color: lightgreen; */
+    .neural-net {
+        background-image: url("/images/svg/reshot-icon-artificial-neural-network-A4Z7V6TEUS.svg");
     }
 
     /* ---PROJECTS--- */
@@ -459,7 +487,6 @@ body {
     #projects {
         width: 100%;
         margin: auto;
-        margin-top: 70px;
         /* border: 4px solid pink; */
     }
 
