@@ -22,6 +22,13 @@ NLP (group)
 Psych Seminar
 Clinical Psych
 
+Project Spotlight on 321 Go:
+- Title, tagline
+- Overview 
+- Problem I'm solving
+- My role (collab w/ Dan)
+- Technologies used
+- Future plans
 
 
 ### Inspo:
