@@ -45,5 +45,6 @@ https://kevinji.com/
     - add "to see more projects..." and github link
 - add better pictures
     - use a snoopy pic for the image processor
+- Add stuff in bio about 
 
 ### Style: 
